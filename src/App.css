@@ -1,38 +1,387 @@
-.App {
-  text-align: center;
+
+h5 , .h5 , h6, .h6{
+  text-align: right;
+}
+.navbar {
+ width: 100%;
+  background-color: #002351;
+}
+.container {
+  padding: 20px;
+}
+.logo {
+  text-align: right;
+  width: 60%;
+}
+.logologoFooter {
+  direction: rtl;
+  width: 60%;
+
+}
+.socialMedia  {
+  width: 20px;
+}
+.linkText{ 
+  color: white ;
+  padding: 4%;
+  text-align: right;
+  direction: rtl; 
+}
+.linkTextRigtSide {
+  color:#143561 ;
+  font-size: 32px;
+  text-align: right;
+  direction: rtl; 
+  position: absolute;
+  margin-left: 66%;
+}
+.linkTextHorizontalSide {
+  color:#143561 ;
+  font-size: 32px;
+  text-align: right;
+  direction: rtl; 
+  position: absolute;
+  margin-left: 87%;
+}
+.dateStyle {
+color: red;
+text-align: right;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.badgeLastNews {
+  background:black ;
+  width:100% ;
+  height:50px ;
+  padding-bottom: 3%;
+
+}
+.badgeRightSide {
+  margin-bottom: 4%;
+  background:white ;
+  width:100% ;
+  height:50px ;
+  padding-bottom: 3%;
+}
+.badgeHorizontalSide {
+  background:white ;
+  width:100% ;
+  height:50px ;
+  padding-bottom: 3%;
+}
+.blockLastNews {
+  width: '100px';
+  height: '150px';
+  margin: 3%;
+
+}
+.carousel {
+  width:450px;
+  height:16%;
+  margin: auto;
+}
+.pictureNews {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 2%;
+}
+.pictureNewsSLideRight {
+  width: 100%;
+  height: 80%;
+  padding-bottom: 2%;
+}
+.verticalLine {
+  border-left: 5px solid rgb(206, 20, 20);
+        display: inline-block;
+        height: 40px;
+        margin: 0 20px;
+        margin-left: 100%;
+}
+.verticalLineHorizontalSide {
+  border-left: 5px solid rgb(206, 20, 20);
+        display: inline-block;
+        height: 40px;
+        margin: 0 20px;
+        margin-left: 95%;
+}
+.horizontalLine {
+  border-top: "dotted 2px";
+  width: 210%;
+
+}
+.itemshorizontalNews {
+  padding :10%;
+}
+              /***********************************
+              *************** Navbar *************
+              *************************************/
+ * {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: #002351;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  text-align: right;
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  font-size: 18px;
+  padding-left: 7%;
+  direction: rtl;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: #002351;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+             /***********************************
+              *************** Footer *************
+              *************************************/
+ .site-footer
+{
+  direction: rtl;
+  background-color:#191C1F;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  margin: -11px;
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
