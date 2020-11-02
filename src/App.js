@@ -9,7 +9,6 @@ import instagram from './assets/instagram.svg';
 import FirstNews from './assets/FirstNews.jpg';
 import SecondNews from './assets/SecondNews.jpg';
 import ThirdNews from './assets/ThirdNews.jpg';
-
 function App() {
     return (
         <div>
